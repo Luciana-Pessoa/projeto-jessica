@@ -58,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
       !isJumping // Só verifica colisão quando não está pulando
     ) {
       showMessage("Você bateu no obstáculo! Tente novamente.", resetGame);
+      setTimeout(() => {
+        location.reload(); // Recarrega a página após 2 segundos
+      }, 2000);
       successfulJumps = 0; // Reseta o contador de saltos bem-sucedidos
     } else if (
       isJumping &&
