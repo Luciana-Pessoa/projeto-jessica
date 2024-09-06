@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pipe.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="game-container">
+        <!-- Etapa 1: Coleta de Moedas -->
+        <div class="game-stage" id="stage1">
+            <br>
+            <h1> Super Girlfriend
+                <img src="img/iudi.gif" alt="iudi" style="width: 80px; height: auto;">
+            </h1>
+            <br>
+            <br>
+            <p class="subtitle"> Colete todas as moedas para avançar para a próxima etapa!</p>
+            <div class="coins">
+                <img src="coin.png" class="coin" id="coin1">
+                <img src="coin.png" class="coin" id="coin2">
+                <img src="coin.png" class="coin" id="coin3">
+                <img src="coin.png" class="coin" id="coin4">
+                <img src="coin.png" class="coin" id="coin5">
+                <img src="coin.png" class="coin" id="coin7">
+                <img src="coin.png" class="coin" id="coin8">
+            </div>
+        </div>
+
+        <!-- Etapa 2: Salto sobre Obstáculos -->
+        <div class="game-stage hidden" id="stage2">
+            <br>
+            <h1>
+                Jogo do Mario
+                <img src="img/game-over.png" alt="Mario" style="width: 30px; height: auto;">
+            </h1>
+            <br>
+            <p class="subtitle">Clique em "Pular" e pule sobre o obstáculo</p>
+
+            <button id="jump-button" class="btn">Pular</button>
+            <div class="obstacle" id="obstacle1" style="background-image: url('img/pipe.png');"></div>
+            <img src="img/mario.gif" id="mario" class="character" alt="Mario">
+            <div id="success-message" class="hidden">Você passou para a próxima fase!</div>
+        </div>
+
+        <!-- Painel de Mensagem -->
+        <div id="message-panel" class="hidden">
+            <p id="message-text"></p>
+            <button id="message-button" class="btn">Ok</button>
+        </div>
+
+        <!-- Etapa 3: Penúltima Fase do Quiz -->
+        <div class="game-stage hidden" id="stage3">
+            <br>
+            <h1>Penúltima Fase: Quiz!</h1>
+            <br>
+            <p class="subtitle">Responda a pergunta abaixo!</p>
+            <br>
+            <p class="quiz-question">Qual sapato eu estava usando quando nos vimos pela primeira vez?</p>
+            <br>
+            <button class="quiz-answer btn">Botas</button>
+            <button class="quiz-answer btn">Sandalia</button>
+            <button class="quiz-answer btn">Tenis branco</button>
+            <button class="quiz-answer btn">Alpargatas Branca</button>
+        </div>
+
+        <!-- Etapa Final:  -->
+        <!-- Etapa Final: Pedido de Namoro -->
+        <div id="final-stage" class="game-stage hidden">
+            <br>
+            <h1>Etapa Final!</h1>
+            <h4 class="subtitle">voce tem 5 segundos!</h4>
+            <p class="subtitle">Aceita namorar comigo? 💍</p>
+            <div class="buttons">
+                <button id="yes-button" class="btn">Sim</button>
+                <button id="no-button" class="btn">Não</button>
+
+            </div>
+
+            <div id="hearts-container" class="hidden"></div>
+            <br>
+            <br>
+            <div id="welcome-message" class="hidden">Bem-vinda à sua melhor fase!🎉 <br> Você não jogara mais sozinha a
+                partir de agora! <br> Estou muito feliz por ter você comigo!!❤️ </div>
+            <!-- Novo elemento para a mensagem -->
+        </div>
+    </div>
+    <footer>
+        <p>Feito com carinho❤️ <a href="https://lucianapessoa.netlify.app/" target="_blank">Luciana Pessoa </a></p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
