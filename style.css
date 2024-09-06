@@ -217,7 +217,7 @@ body {
 
     .obstacle {
         width: 55px;
-        height: 65px;
+        height: 70px;
         left: 15%;
         /* Reposiciona o obstáculo para telas menores */
         animation: moveObstacle 3s linear infinite;
